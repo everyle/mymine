@@ -1,0 +1,97 @@
+*{
+	margin:0;padding:0;
+}
+#regsiter{
+	width:802px;
+	margin:0 auto;
+}
+.regsiterInput,.validate{
+	width:800;
+	height:105px;
+	border:1px solid #dddddd;
+	margin-bottom:66px;
+}
+.regsiterInput p,.validate p{
+	width:137px;
+	height:25px;
+	padding:40px 44px;
+	font-size:25px;
+	float:left;
+	text-align:center;
+}
+.regsiterInput input{
+	width:575px;
+	height:105px;
+	font-size:25px;
+	border:0;
+	float:left;
+}
+#regsiterInputLast{
+	margin-bottom:0;
+}
+#mailPut{
+	width:800px;
+	height:65px;
+	text-align:right;
+	font-size:25px;
+}
+#mailPut a{
+	color:#3388ff;
+}
+.validate input{
+	width:340px;
+	height:105px;
+	font-size:25px;
+	border:0;
+	float:left;
+}
+#getPic,#getPhone{
+	width:235px;
+	height:105px;
+	float:right;
+}
+#getPic{
+	display:block;
+	width:200px;
+	height:91px;
+	background:url("../images/pic.png") no-repeat;
+	margin:7px 7px;
+}
+#getPhone{
+	display:block;
+	width:200px;
+	height:91px;
+	margin:7px 7px;
+	background-color:#f2f2f2;
+	font-size:23px;
+	color:#333333;
+	box-sizing:border-box;
+	padding-top:35px;
+	text-align:center;
+	text-decoration:none;
+}
+#read{
+	width:800px;
+	height:30px;
+	font-size:20px;
+	color:#333333;
+	margin-bottom:74px;
+}
+#read input{
+	width:30px;
+	height:30px;
+	color:#3b99fc;
+	float:left;
+	margin-right:30px;
+}
+#read a{
+	text-decoration:none;
+	color:#3b99fc;
+}
+#submit{
+	width:800px;
+	height:95px;
+	font-size:30px;
+	color:#fefefe;
+	background:#ed2222;
+}

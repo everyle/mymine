@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		
+		<style>
+			*{margin:0;padding:0;}
+			#borderUpBox{
+				width:600px;
+				height:300px;
+				margin:0 auto;
+			}
+			.borderUpL{
+				width:300px;
+				height:300px;
+				float:left;
+				border-radius:50% 50% 0 50%;
+				background-color:red;
+			}
+			.borderUpR{
+				width:300px;
+				height:300px;
+				float:left;
+				border-radius:50% 50% 39px 0/50% 50% 150px 0;
+				background-color:red;
+			}
+			#borderBottomBox{
+				width:0;
+				height:0;
+				border:254px solid transparent;
+				border-top:254px solid red;	
+				margin:0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="borderUpBox">
+			<div class="borderUpL">
+			</div>
+			<div class="borderUpR">
+			</div>
+		</div>
+		<div id="borderBottomBox">
+		</div>
+	</body>
+</html>

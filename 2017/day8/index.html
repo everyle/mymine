@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+	ul{
+		width:200px;
+		height:400px;
+		position:relative;
+	}
+	li{
+		width:200px;
+		height:100px;
+		background-color:red;
+	}
+	li:hover{
+		background-color:yellow;
+	}
+	li div{
+		width:300px;
+		height:400px;
+		position:absolute;
+		display:none;
+		top:0;
+		left:200px;
+		background-color:blue;
+	}
+	li:hover div{
+		display:block;
+	}
+  </style>
+ </head>
+ <body>
+	<ul>
+		<li><div></div></li>
+		<li><div></div></li>
+		<li><div></div></li>
+		<li><div></div></li>
+	</ul>
+ </body>
+</html>

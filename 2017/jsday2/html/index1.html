@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var num=parseInt(prompt("请输入一个四位数"));
+        var q=parseInt(num/1000),b=parseInt(num%1000/100),s=parseInt(num%100/10),g=parseInt(num%10);
+        var x=g;
+        g=q.toString();
+        q=x.toString();
+        x=s;
+        s=b.toString();
+        b=x.toString();
+        alert(q+b+s+g);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
