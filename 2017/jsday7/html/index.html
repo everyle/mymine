@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var index = 0;
+    var oRightButton = document.getElementById("");
+    var oLeftButton = document.getElementById("");
+    var imgs = document.getElementsByClassName("");
+    var lis = document.getElementsByClassName("")
+    oRightButton.onclick = function(){
+        index++;
+        if (index > imgs.length) {
+            index = 0;
+        }
+        move();
+    }
+    oLeftButton.onclick = function(){
+        index--;
+        if (index < 0) {
+            index = imgs.length-1;
+        }
+        move();
+    };
+    //批量给小圆点绑定事件：
+    for (var i = 0; i < lis.length; i++) {
+        (function(i){
+            lis[i].onmouseover = function() {
+                index = i;
+                move();
+            }
+        })(i);
+    }
+    function move() {
+        //让所有的图片隐藏
+        //让当前的元素显示, 让对应index的元素显示
+
+        //让所有的小圆点的样式为默认样式，比如灰色
+        //让当前的小圆点的样式高亮
+        for(i=0;i<imgs.length;i++){
+            imgs[i].className = "";
+            lis[i].className="";
+        }
+        imgs[index].className = "";
+        lis[index].className="";
+    }
+</script>
+</html>

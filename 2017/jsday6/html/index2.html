@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <table id="tb">
+
+    </table>
+</body>
+<script>
+    var json=[{"oname":"Tom","salary":"8000","age":"20"},{"oname":"Will","salary":"6000","age":"25"},{"oname":"Jack","salary":"12000","age":"27"},{"oname":"Timmer","salary":"6000","age":"13"}];
+    var add = document.getElementById("tb");
+    console.log(add);
+    for(i=0;i<json.length;i++){
+        var tr=document.createElement(tr);
+        for(j=0;j<json[i].length;j++) {
+            var td = document.createElement(td);
+
+            td.innerHTML=json[i][j];
+        }
+    }
+</script>
+</html>

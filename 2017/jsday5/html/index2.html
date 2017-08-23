@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+//        //作业1
+//        var str="战士@德玛西亚之力@盖伦@3000#射手@寒冰射手@艾希@2500#法师@流浪法师@瑞兹@2700";
+//        function cut(str) {
+//            var arr=str.split("#");
+//            var oinput=prompt("请输入关键字")
+//            for (i=0;i<arr.length;i++) {
+//                if(arr[i].indexOf(oinput)!=-1){
+//                    console.log(
+//                        "职业:"+arr[i].split("@")[0]+"\n称号:"+arr[i].split("@")[1]+"\n姓名:"+arr[i].split("@")[2]+"\n血量:"+arr[i].split("@")[3]
+//                    )
+//                }
+//            }
+//        }
+//        cut(str);
+
+        //作业2
+//        var str="i am come from beijing";
+//        function reverse(str) {
+//            str=str.split(" ").reverse().join(" ");
+//            console.log(str);
+//        }
+//        reverse(str);
+
+//        //作业3
+//        var str="dwisnidiekpshidniddw";
+//        var n=8;
+//        function rightchange(str,n) {
+//            var newarr=str.split("");
+//            newarr.splice(n,0,"@");
+//            console.log(newarr.join("").split("@")[1]+newarr.join("").split("@")[0]);
+//        }
+//        rightchange(str,n);
+
+//        //作业4
+//        var str="djdjdjjjllllxxxxkkkkkkkeeeppppppppppppppp";
+//        function maxr(str){
+//                var nowbig=1;
+//                var arr=[];
+//                var k;
+//                for (var i=0;i<str.length;i++){
+//                    if (str.split("")[i]==str.split("")[i+1]){
+//                        nowbig++;
+//                    }
+//                    else {
+//                        arr.push([nowbig,i+1-nowbig]);
+//                        nowbig=1;
+//                    }
+//                }
+//            function descend(x,y){
+//                return x[0] - y[0];  //按照数组的第1个值升序排列
+//            }
+//            var last=arr.sort(descend).pop();
+//            console.log(str.substr(parseInt(last[1]),parseInt(last[0])))
+//        }
+//        maxr(str);
+        var arr=[];
+        function qiu(arr) {
+            for(i=0;i<6;i++){
+                var n=Math.round(Math.round()*33);
+                arr.push(n)
+            }
+            var n1=Math.round(Math.round()*16);
+            arr.push(n1);
+            console.log(arr);
+        }
+        qiu(arr);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

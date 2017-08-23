@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0;padding: 0}
+        table{margin: 50px auto;border: 1px solid black; border-collapse: collapse; }
+        th{line-height: 50px;border: 1px solid black;}
+        td{width: 150px;height: 50px;text-align: center;border: 1px solid black;}
+        button{width: 25px;height:25px;}
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+        <th>商品名称</th>
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>iphone7</td>
+            <td class="onemoney">4600</td>
+            <td>
+                <button onclick="btn(this)" class="click">+</button>
+                <span class="num">1</span>
+                <button onclick="btn(this)" class="click">-</button>
+            </td>
+            <td class="money">
+                4600
+            </td>
+        </tr>
+        <tr>
+            <td>iphone7 plus</td>
+            <td class="onemoney">5600</td>
+            <td>
+                <button onclick="btn(this)" class="click">+</button>
+                <span class="num">1</span>
+                <button onclick="btn(this)" class="click">-</button>
+            </td>
+            <td class="money">
+                5600
+            </td>
+        </tr>
+        <tr>
+            <td>ipad pro</td>
+            <td class="onemoney">4000</td>
+            <td>
+                <button onclick="btn(this)" class="click">+</button>
+                <span class="num">1</span>
+                <button onclick="btn(this)" class="click">-</button>
+            </td>
+            <td class="money">
+                4000
+            </td>
+        </tr>
+        <tr>
+            <td>mac pro</td>
+            <td class="onemoney">9800</td>
+            <td>
+                <button onclick="btn(this)" class="click">+</button>
+                <span class="num">1</span>
+                <button onclick="btn(this)" class="click">-</button>
+            </td>
+            <td class="money">
+                9800
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">总计</td>
+            <td id="moneyall">24000</td>
+        </tr>
+    </tfoot>
+</table>
+
+</body>
+<script>
+//    //购物车
+//    function btn(btnin){
+//         var num = btnin.parentNode.getElementsByClassName("num")[0];
+//         var money = btnin.parentNode.parentNode.getElementsByClassName("money")[0];
+//         var onemoney = btnin.parentNode.parentNode.getElementsByClassName("onemoney")[0];
+//         if(btnin.innerHTML=="+"){
+//             num.innerHTML=parseInt(num.innerHTML)+1;
+//             money.innerHTML=parseInt(money.innerHTML)+parseInt(onemoney.innerHTML)
+//         }
+//         else{
+//             num.innerHTML=parseInt(num.innerHTML-1)<1?num.innerHTML=1:num.innerHTML=parseInt(num.innerHTML)-1,money.innerHTML=parseInt(money.innerHTML)-parseInt(onemoney.innerHTML);
+//             if(parseInt(money.innerHTML)<parseInt(onemoney.innerHTML)){
+//                 money.innerHTML=onemoney.innerHTML;
+//             }
+//         }
+//         document.getElementById("moneyall").innerHTML=(parseInt(document.getElementsByClassName("money")[0].innerHTML))+(parseInt(document.getElementsByClassName("money")[1].innerHTML))+(parseInt(document.getElementsByClassName("money")[2].innerHTML))+(parseInt(document.getElementsByClassName("money")[3].innerHTML));
+//         console.log(document.getElementById("moneyall").innerHTML)
+//        console.log(document.getElementsByClassName("money")[0])
+//    }
+    
+    //验证码
+    var arr=["3","5","6","9","0","D","H","K","J","W","d","f","p","l","m"];
+    function radon(arr) {
+        var str = prompt("请输入验证码");
+        var newarr = [];
+        for(i=0;i<4;i++) {
+            var num = Math.round(Math.random()*arr.length);
+            if((newarr.indexOf(arr[num]))==-1){
+                newarr.push(arr[Math.round(Math.random()*arr.length)]);
+                console.log(Math.round(Math.random()*arr.length))
+            }
+            else {
+                i--;
+            }
+        }
+        console.log(newarr);
+    }
+    radon(arr);
+</script>
+</html>
